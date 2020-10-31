@@ -20,11 +20,12 @@
     </properties>
 
     <dependencies>
+<!--    SERVIDOR WEB REATIVO  PROJETO REACTOR  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
-
+<!--    ACESSO DB COM DRIVE NAO BLOCANTE    -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-r2dbc</artifactId>
@@ -39,6 +40,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+<!--    VALIDADORES DE MODELOS    -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
