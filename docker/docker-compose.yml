@@ -4,6 +4,7 @@ services:
     image: mariadb
     environment:
       - MYSQL_ROOT_PASSWORD=jefao123
+      - MYSQL_DATABASE=ws
       - MYSQL_USER=jefao
       - MYSQL_PASSWORD=jefao
     volumes:
