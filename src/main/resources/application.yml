@@ -3,3 +3,9 @@ spring:
     url: r2dbc:mysql://localhost:3306/ws
     username: jefao
     password: jefao
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
