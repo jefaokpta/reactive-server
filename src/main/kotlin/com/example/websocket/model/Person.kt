@@ -8,10 +8,10 @@ import javax.validation.constraints.NotNull
 @Table("persons")
 class Person(
         @Id
-        var id: Long?,
-        @NotNull @NotEmpty
+        val id: Long?,
+        @NotEmpty
         val name: String,
-        @NotNull @NotEmpty
+        @NotEmpty
         val age: Int,
         val telephone: String?
 ) {
