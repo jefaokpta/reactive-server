@@ -34,3 +34,4 @@ build/
 
 ### JEFAO
 docker/dbdata
+docker/postgredata

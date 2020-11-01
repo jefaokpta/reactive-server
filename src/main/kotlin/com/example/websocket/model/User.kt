@@ -1,10 +1,8 @@
 package com.example.websocket.model
 
 import org.springframework.data.annotation.Id
-import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table
 import java.util.*
-import javax.annotation.Generated
 import javax.validation.constraints.NotEmpty
 import javax.validation.constraints.NotNull
 
@@ -12,9 +10,9 @@ import javax.validation.constraints.NotNull
 class User(
         @Id
         val id: UUID = UUID.randomUUID(),
-        @NotNull @NotEmpty
+        @NotEmpty
         val name: String,
-        @NotNull @NotEmpty
+        @NotEmpty
         val password: String
 ) {
 }

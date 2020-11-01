@@ -1,5 +1,7 @@
 package com.example.websocket
 
+import com.example.websocket.model.User
+import com.example.websocket.service.UserService
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 

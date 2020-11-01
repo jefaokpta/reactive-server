@@ -1,13 +1,11 @@
 version: "3"
 services:
   db-websocket:
-    image: mariadb
+    image: postgres
     environment:
-      - MYSQL_ROOT_PASSWORD=jefao123
-      - MYSQL_DATABASE=ws
-      - MYSQL_USER=jefao
-      - MYSQL_PASSWORD=jefao
-    volumes:
-      - ./dbdata:/var/lib/mysql
+      - POSTGRES_USER=jefao
+      - POSTGRES_PASSWORD=jefao123
     ports:
-      - 3306:3306
+      - 5432:5432
+    volumes:
+      - ./postgredata:/var/lib/postgresql/data

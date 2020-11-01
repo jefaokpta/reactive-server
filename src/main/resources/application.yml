@@ -1,11 +1,14 @@
 spring:
   r2dbc:
-    url: r2dbc:mysql://localhost:3306/ws
+    url: r2dbc:postgres://localhost:5432/postgres?schema=ws
     username: jefao
-    password: jefao
+    password: jefao123
 logging:
   level:
     org:
       springframework:
         data:
           r2dbc: DEBUG
+server:
+  error:
+    include-message: always

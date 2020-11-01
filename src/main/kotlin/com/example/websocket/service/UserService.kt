@@ -16,5 +16,9 @@ class UserService(val userRepository: UserRepository) {
                 convertToUUID(id).let { it?: return Mono.empty<User>() }
         )
 
-    fun save(user: User) = userRepository.save(user)
+    fun get(id: UUID) = userRepository.findById(id)
+
+    fun save(user: User) = userRepository.insert(user.id, user.name, user.password)
+//                .subscribe()
+//                .let { userRepository.findById(user.id) }
 }
