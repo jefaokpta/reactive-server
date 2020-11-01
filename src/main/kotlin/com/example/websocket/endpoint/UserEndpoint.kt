@@ -20,5 +20,5 @@ class UserEndpoint(val userService: UserService) {
 
     @PostMapping()
     fun save(@RequestBody user: User) = userService.save(user)
-            .then(userService.get(user.id))
+
 }

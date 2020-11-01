@@ -19,6 +19,5 @@ class UserService(val userRepository: UserRepository) {
     fun get(id: UUID) = userRepository.findById(id)
 
     fun save(user: User) = userRepository.insert(user.id, user.name, user.password)
-//                .subscribe()
-//                .let { userRepository.findById(user.id) }
+                .then(userRepository.findById(user.id))
 }
